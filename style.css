@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*conta apartit da borda*/
+  font-size: 62.5%; /*10px* - 100%=16px que é o tamnhao padrão do navegador */
+}
+
+html {
+  --primary-color: #D6336C;
+  --secundary-color: #A61E4D;
+  --dark-color: #1F000B;
+}
+
+body {
+  background-color: #FFF0F6;
+  font-family: 'roboto';
+}
+
+
+.container {
+  text-align: center;
+  width: 300px;
+  margin: 60px auto;
+}
+
+img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 3.7px;
+  border: var(--secundary-color) solid 4px;
+}
+
+h1 {
+  font-size: 3.2rem;
+  margin-top: 2.4rem;
+  margin-bottom: 0.8rem;
+  color: var(--dark-color);
+}
+
+p {
+  font-size: 1.8rem;
+  font-family: 'roboto Mono', monospace;
+  font-weight: 400;
+  color: var(--dark-color);
+  opacity: 0.8;
+  margin-bottom: 4.8rem;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'roboto';
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  height: 5.3rem;
+  margin-bottom: 1.6rem;
+  padding: 1.6rem 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  border-radius: 6px;
+  transition: background 400ms; /*suavisar a transição de cor quiando passar o mouse*/
+}
+
+ul li svg {
+  fill: #ffffff;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 0.2rem;
+}
+
+ul li a {
+
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase; /*caixa alta*/
+
+}
+/*passar mouse em cima*/
+ul li:hover{
+    background-color: var(--dark-color);
+}
+
+footer {
+  font-size: 1.2rem;
+  color: var(--dark-color);
+  margin-top: 4.8rem;
+  opacity: 0.6;
+  transition: opacity 400;
+}
+
+footer:hover{
+    opacity: 1;
+}
+
+footer a{
+    color: var(--dark-color);
+    font-size: 1.2rem;
+
+}
