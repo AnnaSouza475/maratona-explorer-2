@@ -3,16 +3,20 @@
   padding: 0;
   box-sizing: border-box; /*conta apartit da borda*/
   font-size: 62.5%; /*10px* - 100%=16px que é o tamnhao padrão do navegador */
+
 }
 
 html {
   --primary-color: #D6336C;
   --secundary-color: #A61E4D;
+  --light-color:#ec598c;
   --dark-color: #1F000B;
+  --dark-color-1: #1F000B;
+  --background-color:#FFF0F6;
 }
 
 body {
-  background-color: #FFF0F6;
+  background-color: var(--background-color);
   font-family: 'roboto';
 }
 
@@ -29,6 +33,23 @@ img {
   height: 100px;
   padding: 3.7px;
   border: var(--secundary-color) solid 4px;
+}
+
+.dark{
+  fill: var(--dark-color);
+  width: 3.6rem;
+  height: 3.6rem;
+  position: absolute;
+  
+  
+}
+ dark{
+  position: fixed;
+  fill: var(--dark-color);
+  width: 3.0rem;
+  height: 3.0rem;
+  background-color: var(--dark-color);
+
 }
 
 h1 {
@@ -59,33 +80,40 @@ ul {
 ul li {
   height: 5.3rem;
   margin-bottom: 1.6rem;
-  padding: 1.6rem 8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--primary-color);
-  border-radius: 6px;
-  transition: background 400ms; /*suavisar a transição de cor quiando passar o mouse*/
+
+
 }
 
 ul li svg {
   fill: #ffffff;
   width: 1.6rem;
   height: 1.6rem;
-  margin-right: 0.2rem;
+  margin-right: 0.3rem;
+
 }
 
-ul li a {
+ul li svg a{
+  display: flex;
+  align-items: center;
 
+}
+
+ul li a{
+  padding: 1.6rem 8rem;
   font-size: 1.4rem;
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase; /*caixa alta*/
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-color);
+  border-radius: 6px;
+  transition: background 400ms; /*suavisar a transição de cor quiando passar o mouse*/
 
 }
 /*passar mouse em cima*/
-ul li:hover{
-    background-color: var(--dark-color);
+ul li a:hover{
+    background-color: var(--dark-color-1);
 }
 
 footer {
